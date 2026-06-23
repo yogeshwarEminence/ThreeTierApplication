@@ -3,18 +3,18 @@ services:
   mongo:
     image: mongo
     ports:
-      -27017:27017
+      - "27017:27017"
 
   server:
     build: ./server
     ports:
-      - 5000:5000
+      - "5000:5000"
     depends_on:
       - mongo
 
-  Client:
+  client:
     build: ./client
     ports:
-      - 5173:5173
+      - "5173:5173"
     depends_on:
       - server
