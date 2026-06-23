@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Env files
-.env
-
 # Build output
 client/dist/
 
